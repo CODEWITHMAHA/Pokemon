@@ -55,4 +55,7 @@
     .category{
         @apply bg-primary px-2 py-1 text-center rounded-full font-semibold
     }
+    .input{
+        @apply outline-none border-b-2 text-start mt-2
+    }
 }    
