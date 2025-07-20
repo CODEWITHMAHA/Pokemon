@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@theme{
+    --color-background: #ffffff;
+    --color-primary: bg-green-500;
+    --color-text: text-black;
+    --color-btn-text: white;
+}
+
+@layer theme{
+    :root{
+    --color-background: #ffffff;
+    --color-primary: rgb(147, 232, 147);
+    --color-text: black;
+    --color-btn-text: white;
+    }
+    :root {
+        transition: background-color 0.5s ease, color 0.5s ease;
+    }
+}
+
+
+
+@layer components {
+    .custom-container {
+        @apply w-full max-w-[1350px] mx-auto px-5 md:px-10 lg:px-16 xl:px-5 mt-5;
+    }
+    .align {
+        @apply flex items-center
+    }
+    .center {
+        @apply flex items-center justify-center
+    }
+    .horizontal {
+        @apply flex flex-row
+    }
+    .vertical {
+        @apply flex flex-col items-center justify-center gap-2
+    }
+    .btn {
+        @apply h-9 w-10 rounded-lg bg-primary text-btn-text text-sm cursor-pointer transition duration-300 ease-in-out hover:shadow
+    }
+    .heading {
+        @apply text-text font-bold text-3xl
+    }
+    .grid{
+        @apply grid md:grid-cols-3 gap-6 
+    }
+    .pokemon-img{
+        @apply w-[130px]
+    }
+    .card{
+        @apply w-[350px] bg-[#f0e6e6] px-1 py-2 rounded-xl hover:shadow-2xl
+    }
+    .category{
+        @apply bg-primary px-2 py-1 text-center rounded-full font-semibold
+    }
+}    
