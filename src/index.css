@@ -50,12 +50,12 @@
         @apply w-[130px]
     }
     .card{
-        @apply w-[350px] bg-[#f0e6e6] px-1 py-2 rounded-xl hover:shadow-2xl
+        @apply w-[350px] bg-[#f9f2f2] px-1 py-2 rounded-xl shadow-xl hover:drop-shadow-2xl
     }
     .category{
         @apply bg-primary px-2 py-1 text-center rounded-full font-semibold
     }
     .input{
-        @apply outline-none border-b-2 text-start mt-2
+        @apply outline-none border-b-2 text-start mt-2 
     }
 }    
